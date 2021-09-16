@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ChevronDoubleDownIcon } from "@heroicons/react/solid";
 import Sidebar from "./DropdownMenue";
 import { CSSTransition } from "react-transition-group";
@@ -15,10 +15,10 @@ const Navbar = () => {
       <nav className="hidden sm:inline mt-7">
         <ul className="sm:flex flex-row justify-evenly ">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li onMouseEnter={() => sideBar()} onMouseLeave={() => sideBar()}>
-            <Link to="/research">Research</Link>
+            <NavLink to="/research">Research</NavLink>
             <ChevronDoubleDownIcon className="h-5 w-5 inline" />
             <div className="absolute left-1/4 w-52 z-10">
               <CSSTransition
@@ -34,13 +34,13 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <Link to="/publication">Publication</Link>
+            <NavLink to="/publication">Publication</NavLink>
           </li>
           <li>
-            <Link to="/codes">Codes</Link>
+            <NavLink to="/codes">Codes</NavLink>
           </li>
           <li>
-            <Link to="/news">News</Link>
+            <NavLink to="/news">News</NavLink>
           </li>
         </ul>
       </nav>

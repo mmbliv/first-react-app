@@ -18,7 +18,7 @@ function App() {
         <Router exact path="/codes">
           <Codes />
         </Router>
-        <Router exact path="/news">
+        <Router path="/news">
           <News />
         </Router>
       </Switch>

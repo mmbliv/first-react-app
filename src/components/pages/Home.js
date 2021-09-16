@@ -2,7 +2,8 @@ import React from "react";
 import HomeShowSlides from "../homeCom/HomeShowSlides";
 import { NewsCom } from "../newsCom/NewsCom";
 import newsData from "../../data/news-data";
-import { Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
+import NewsPage from "./News";
 
 const Home = () => {
   return (
@@ -29,9 +30,8 @@ const Home = () => {
               content={newsData[newsData.length - 1].content.slice(0, 300)}
               img={newsData[newsData.length - 1].img}
             />
-            <Link to="/news" className="text-blue-500">
-              read more
-            </Link>
+
+            <Link to="/news">more info</Link>
           </div>
         </div>
       </div>
