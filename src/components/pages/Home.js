@@ -2,10 +2,20 @@ import React from "react";
 import HomeShowSlides from "../homeCom/HomeShowSlides";
 import { NewsCom } from "../newsCom/NewsCom";
 import newsData from "../../data/news-data";
-import { Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+  useRouteMatch,
+} from "react-router-dom";
+import News from "./News";
+
 import NewsPage from "./News";
 
 const Home = () => {
+  let { path, url } = useRouteMatch();
   return (
     <div className="w-10/12 my-0 mx-auto">
       <div>
@@ -35,6 +45,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Switch>
+        <Route exact path="/" />
+        <Route exact path="/news" />
+      </Switch>
     </div>
   );
 };
