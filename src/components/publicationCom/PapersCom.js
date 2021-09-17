@@ -29,9 +29,9 @@ export const PapersCom = () => {
         return (
           <>
             <div key={index}>
-              <button className="w-full h-5 bg-gray-400 text-gray-800">
+              <div className=" pl-1 w-full h-6 bg-gray-400 text-gray-600 rounded-sm">
                 {item}
-              </button>
+              </div>
             </div>
             {newOrderedDate[item].map((paper) => {
               return (

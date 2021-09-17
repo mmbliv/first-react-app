@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
       <nav className="hidden sm:inline mt-7">
         <ul className="sm:flex flex-row justify-evenly ">
-          <li>
+          <li className="hover:underline">
             <NavLink to="/">Home</NavLink>
           </li>
           <li onMouseEnter={() => sideBar()} onMouseLeave={() => sideBar()}>
@@ -33,13 +33,19 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <NavLink to="/publication">Publication</NavLink>
+            <NavLink to="/publication" className="hover:underline">
+              Publication
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/codes">Codes</NavLink>
+            <NavLink to="/codes" className="hover:underline">
+              Codes
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/news">News</NavLink>
+            <NavLink to="/news" className="hover:underline">
+              News
+            </NavLink>
           </li>
         </ul>
       </nav>

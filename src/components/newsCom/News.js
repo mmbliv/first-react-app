@@ -8,7 +8,7 @@ export const News = () => {
       <h1 className="pt-4 text-5xl">NEWS</h1>
       {newsData.map((item) => {
         return (
-          <div className="border-gray-700 border-b-2">
+          <div>
             <NewsCom
               key={item.id}
               title={item.title}

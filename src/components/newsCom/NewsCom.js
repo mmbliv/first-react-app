@@ -54,6 +54,7 @@ export const NewsCom = (props) => {
           </p>
         )}
       </div>
+      <hr />
     </div>
   );
 };
