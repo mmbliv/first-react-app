@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ChevronDoubleDownIcon } from "@heroicons/react/solid";
 import Sidebar from "./DropdownMenue";
 import { CSSTransition } from "react-transition-group";
-
+import { sideBarList } from "../data/Navlist";
 const Navbar = () => {
-  const sideBarList = ["jjj", "jjjk", "yyyy"];
   const [toggleSidebar, setToggleSidebar] = useState(false);
   const sideBar = () => {
     setToggleSidebar(!toggleSidebar);

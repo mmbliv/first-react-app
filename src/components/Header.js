@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { MenuIcon } from "@heroicons/react/solid";
 import Navbarsm from "./HambergerMenue";
 import { CSSTransition } from "react-transition-group";
@@ -21,11 +21,11 @@ const Header = () => {
           onMouseEnter={() => sideBar()}
           onMouseLeave={() => sideBar()}
         >
-          <MenuIcon className="h-5 w-5 inline" />
+          <MenuIcon className="h-5 w-5 inline sm:hidden" />
           <div className=" text-black">
             <CSSTransition
               in={toggleSidebar}
-              timeout={10000}
+              timeout={100}
               unmountOnExit
               className="nav"
             >

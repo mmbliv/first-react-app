@@ -5,6 +5,7 @@ import Home from "./components/pages/Home";
 import Codes from "./components/pages/Codes";
 import Header from "./components/Header";
 import News from "./components/pages/News";
+import Publication from "./components/pages/Publication";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route exact path="/news">
           <News />
+        </Route>
+        <Route exact path="/publication">
+          <Publication />
         </Route>
       </Switch>
     </Router>

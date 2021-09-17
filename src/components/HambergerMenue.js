@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Sidebar from "./DropdownMenue";
 import { Link } from "react-router-dom";
 import { ChevronDoubleDownIcon } from "@heroicons/react/solid";
@@ -12,7 +12,7 @@ const Navbarsm = () => {
   };
   return (
     <>
-      <nav className="nav absolute bg-gray-600 right-0 border-2 w-44 text-white sm:hidden z-10">
+      <nav className="nav absolute bg-gray-600 right-0 border-2 w-44 text-white z-10 sm:hidden ">
         <ul>
           <li className="px-1">
             <Link to="/">Home</Link>
@@ -27,7 +27,7 @@ const Navbarsm = () => {
           <li className="px-0">
             <CSSTransition
               in={toggleSidebar}
-              timeout={10000}
+              timeout={100}
               unmountOnExit={true}
               className="nav"
             >
