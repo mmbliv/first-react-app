@@ -19,9 +19,9 @@ const Home = () => {
             necessitatibus harum voluptates similique nulla ipsum!
           </p>
         </div>
-        <div className="w-5/12 ml-5">
-          <div className="w-full ">
-            <h1>LATEST NEWS</h1>
+        <div className="w-5/12 ml-5 ">
+          <div className="w-full">
+            <h1 className="py-3 text-lg">LATEST NEWS</h1>
             <NewsCom
               key={newsData[newsData.length - 1].id}
               title={newsData[newsData.length - 1].title}
@@ -30,7 +30,9 @@ const Home = () => {
               img={newsData[newsData.length - 1].img}
             />
 
-            <Link to="/news">more info</Link>
+            <Link to="/news" className="text-blue-400 hover:underline">
+              more info
+            </Link>
           </div>
         </div>
       </div>

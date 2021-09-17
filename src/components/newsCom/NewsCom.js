@@ -7,7 +7,7 @@ export const NewsCom = (props) => {
 
   console.log(isReadMore);
   return (
-    <div className="py-4">
+    <div>
       <h1 className="text-blue-500">{props.title}</h1>
       <time className="text-gray-600">{props.date}</time>
 
@@ -18,7 +18,7 @@ export const NewsCom = (props) => {
               <img
                 src={props.img}
                 alt={""}
-                className=" w-2/5 h-52 float-left rounded-sm pr-1"
+                className="w-2/5 h-52 float-left rounded-sm pr-1 object-cover sm:object-contain"
               />
             )}
             {props.content}
@@ -37,7 +37,7 @@ export const NewsCom = (props) => {
               <img
                 src={props.img}
                 alt={""}
-                className=" w-2/5 h-52 float-left rounded-sm pr-1"
+                className=" w-2/5 h-52 float-left rounded-sm pr-1 object-cover sm:object-contain"
               />
             )}
             {props.content.slice(0, 600)}
@@ -54,7 +54,6 @@ export const NewsCom = (props) => {
           </p>
         )}
       </div>
-      <hr />
     </div>
   );
 };

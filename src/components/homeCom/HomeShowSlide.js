@@ -6,7 +6,7 @@ const HomeShowSlide = ({ item, total, nextSlide, prevSlide }) => {
       <img
         src={item.img}
         alt={item.intro}
-        className=" w-full h-96 object-cover"
+        className=" w-full h-96 object-cover ms:object-contain"
       />
 
       <div className="absolute rounded-sm bg-opacity-75 p-2 left-1 top-16 bg-blue-300">

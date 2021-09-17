@@ -19,36 +19,39 @@ export const PapersCom = () => {
     }
     return orderedData;
   };
-  //   asign new ordered data to newOrderedData
+  //   asign new ordered data to newOrderedData which is an object
   const newOrderedDate = orderData(paperData);
 
   return (
     <div>
       {/* loop through the new object data ; item represent the different year */}
-      {Object.keys(newOrderedDate).map((item, index) => {
-        return (
-          <>
-            <div key={index}>
-              <div className=" pl-1 w-full h-6 bg-gray-400 text-gray-600 rounded-sm">
-                {item}
+      {Object.keys(newOrderedDate)
+        .sort((a, b) => b - a)
+        .map((item, index) => {
+          return (
+            <>
+              <div key={index}>
+                <div className=" pl-1 w-full h-6 bg-gray-400 text-gray-600 rounded-sm">
+                  {item}
+                </div>
               </div>
-            </div>
-            {newOrderedDate[item].map((paper) => {
-              return (
-                <>
-                  <PaperCom
-                    key={paper.id}
-                    title={paper.title}
-                    author={paper.author}
-                    year={paper.year}
-                    magazine={paper.magazine}
-                  />
-                </>
-              );
-            })}
-          </>
-        );
-      })}
+              {newOrderedDate[item].map((paper) => {
+                return (
+                  <>
+                    <PaperCom
+                      key={paper.id}
+                      title={paper.title}
+                      author={paper.author}
+                      year={paper.year}
+                      magazine={paper.magazine}
+                      url={paper.url}
+                    />
+                  </>
+                );
+              })}
+            </>
+          );
+        })}
     </div>
   );
 };

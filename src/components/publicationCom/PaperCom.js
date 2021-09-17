@@ -5,7 +5,7 @@ export const PaperCom = (props) => {
     <article className="w-11/12 my-1 mx-auto">
       <a
         className="font-bold text-gray-600 hover:underline hover:text-gray-400"
-        href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RXLH5k4AAAAJ&citation_for_view=RXLH5k4AAAAJ:u5HHmVD_uO8C"
+        href={props.url}
       >
         {props.title}
       </a>

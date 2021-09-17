@@ -10,6 +10,9 @@ module.exports = {
         "3/4": "75%",
         full: "100%",
       },
+      transitionProperty: {
+        underline: "text-decoration",
+      },
     },
   },
   variants: {

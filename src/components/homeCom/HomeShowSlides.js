@@ -32,7 +32,7 @@ const HomeShowSlides = () => {
       {homeShowSlides
         .filter((item) => item.id === slideIndex)
         .map((i) => (
-          <div className="relative my-20 overflow-hidden mx-auto h-96 w-8/12 ">
+          <div className="relative my-20 overflow-hidden mx-auto h-96 w-10/12 ">
             <TransitionGroup>
               <CSSTransition
                 className={
