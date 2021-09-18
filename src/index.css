@@ -8,6 +8,9 @@
   -o-transition: all 0.2s linear;
   overflow: auto;
 }
+body {
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+}
 
 .slide-next.enter {
   opacity: 0;

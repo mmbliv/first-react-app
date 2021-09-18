@@ -1,9 +1,10 @@
 import React from "react";
+import { Code } from "../codeCom/Code";
 
 const Codes = () => {
   return (
     <>
-      <h1>code</h1>
+      <Code />
     </>
   );
 };

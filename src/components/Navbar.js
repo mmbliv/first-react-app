@@ -10,8 +10,8 @@ const Navbar = () => {
     setToggleSidebar(!toggleSidebar);
   };
   return (
-    <>
-      <nav className="hidden sm:inline mt-7">
+    <div className=" mt-6">
+      <nav className="hidden sm:inline">
         <ul className="sm:flex flex-row justify-evenly ">
           <li className="hover:underline">
             <NavLink to="/">Home</NavLink>
@@ -49,7 +49,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 };
 

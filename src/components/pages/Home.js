@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="w-10/12 my-0 mx-auto">
-      <div>
+      <div className="mt-6">
         <HomeShowSlides />
       </div>
-      <div className="flex">
+      <div className="flex mt-6">
         <div className="w-7/12">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
