@@ -4,7 +4,8 @@ import { codeData } from "../../data/code-data";
 
 export const Code = () => {
   return (
-    <div>
+    <>
+      <h1 className="font-bold text-4xl font-serif ">CODES</h1>
       {codeData.map((item) => {
         return (
           <>
@@ -18,6 +19,6 @@ export const Code = () => {
           </>
         );
       })}
-    </div>
+    </>
   );
 };
