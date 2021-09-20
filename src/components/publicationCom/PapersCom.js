@@ -31,7 +31,7 @@ export const PapersCom = () => {
           return (
             <>
               <div key={index}>
-                <div className=" pl-1 w-full h-6 bg-gray-400 text-gray-600 rounded-sm">
+                <div className=" pl-1 w-full h-6 bg-gray-200 text-gray-600 rounded-sm">
                   {item}
                 </div>
               </div>

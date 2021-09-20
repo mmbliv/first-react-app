@@ -6,6 +6,7 @@ import Codes from "./components/pages/Codes";
 import Header from "./components/Header";
 import News from "./components/pages/News";
 import Publication from "./components/pages/Publication";
+import Research from "./components/pages/ResearchPage";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route exact path="/publication">
           <Publication />
+        </Route>
+        <Route exact path="/research">
+          <Research />
         </Route>
       </Switch>
     </Router>
