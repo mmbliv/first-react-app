@@ -31,8 +31,9 @@ export const PapersCom = () => {
           return (
             <div>
               <div key={index}>
-                <div className=" border-gray-300 border-b-2 pt-2">{item}</div>
+                <div className="pt-2">{item}</div>
               </div>
+              <hr />
               {newOrderedDate[item].map((paper) => {
                 return (
                   <div className="m-6">

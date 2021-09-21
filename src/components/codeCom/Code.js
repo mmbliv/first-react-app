@@ -5,10 +5,10 @@ import { codeData } from "../../data/code-data";
 export const Code = () => {
   return (
     <div>
-      <h1 className="font-bold text-4xl font-serif ">CODES</h1>
+      <h1 className="font-bold text-4xl text-Stroke ">CODES</h1>
       {codeData.map((item) => {
         return (
-          <ul>
+          <ul className="pt-6">
             <CodeCom
               title={item.title}
               key={item.id}

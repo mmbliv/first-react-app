@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <>
-      <div className="text-white bg-gray-700 h-10 flex flex-row justify-around items-center ">
+      <div className="text-white bg-Headline h-10 flex flex-row justify-around items-center ">
         <h4>MINGJIAN WEN</h4>
         <h4 className="underline">
           <a href="mailto:mmbliv@gmail.com">Email Me</a>

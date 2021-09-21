@@ -3,6 +3,20 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        Background: "#fffffe",
+        Headline: "#094067",
+        Paragraph: "#5f6c7b",
+        Button: "#3da9fc",
+        ButtonText: "#fffffe",
+        Stroke: "#094067",
+        Main: "#fffffe",
+        Hightlight: "#3da9fc",
+        Secondary: "#90b4ce",
+        Tertiary: "#ef4565",
+      },
       fontFamily: {
         openSan: ['"Open Sans"', "sans-serif"],
       },

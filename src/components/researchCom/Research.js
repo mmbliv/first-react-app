@@ -5,11 +5,14 @@ const Research = () => {
   return (
     <div>
       {researchData.map((item) => (
-        <article key={item.id} id={item.shortTitle}>
-          <p className="py-4 font-bold text-lg">{item.title}</p>
-          <p>{item.infor}</p>
-          <img src={item.img} alt={item.title} className="py-4" />
-        </article>
+        <>
+          <article key={item.id} id={item.shortTitle} className="pt-6 pl-6">
+            <p className="py-4 font-bold text-lg text-Stroke">{item.title}</p>
+            <p>{item.infor}</p>
+            <img src={item.img} alt={item.title} className="py-4" />
+          </article>
+          <hr />
+        </>
       ))}
     </div>
   );

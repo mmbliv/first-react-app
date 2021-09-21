@@ -8,23 +8,25 @@ export const NewsCom = (props) => {
   console.log(isReadMore);
   return (
     <div>
-      <h1 className="text-blue-500">{props.title}</h1>
-      <time className="text-gray-600">{props.date}</time>
+      <h1 className=" text-Hightlight text-lg">{props.title}</h1>
+      <time className="text-Stroke text-sm">{props.date}</time>
 
       <div>
+        {/* if text is long than 600 then there is a read more button, and there will only show 600 long words'by slice string method'.
+         */}
         {isReadMore ? (
-          <p className="whitespace-pre-line">
+          <p className="whitespace-pre-line py-3">
             {props.img !== "" && (
               <img
                 src={props.img}
                 alt={""}
-                className="w-2/5 h-52 float-left rounded-sm pr-1 object-cover sm:object-contain"
+                className="w-2/5 h-52 float-left rounded-sm object-cover sm:object-contain"
               />
             )}
             {props.content}
             {isTextLong && (
               <button
-                className=" text-blue-400 inline-block pl-4"
+                className=" text-Button inline-block pl-4"
                 onClick={() => setIsReadMore(!isReadMore)}
               >
                 {isReadMore ? "read less" : "read more"}
@@ -32,12 +34,12 @@ export const NewsCom = (props) => {
             )}
           </p>
         ) : (
-          <p className="whitespace-pre-line">
+          <p className="whitespace-pre-line py-3">
             {props.img !== "" && (
               <img
                 src={props.img}
                 alt={""}
-                className=" w-2/5 h-52 float-left rounded-sm pr-1 object-cover sm:object-contain"
+                className=" w-2/5 h-52 float-left rounded-sm object-cover sm:object-contain"
               />
             )}
             {props.content.slice(0, 600)}
@@ -45,7 +47,7 @@ export const NewsCom = (props) => {
             {isTextLong && <span>...</span>}
             {isTextLong && (
               <button
-                className=" text-blue-400 inline-block pl-4"
+                className=" text-Button inline-block pl-4"
                 onClick={() => setIsReadMore(!isReadMore)}
               >
                 {isReadMore ? "read less" : "read more"}

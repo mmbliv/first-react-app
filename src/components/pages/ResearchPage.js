@@ -1,5 +1,5 @@
 import React from "react";
-import ResearchCom from "../researchCom/ResearchCom";
+import { ResearchCom } from "../researchCom/ResearchCom";
 
 const Research = () => {
   return (
