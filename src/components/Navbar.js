@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { ChevronDoubleDownIcon } from "@heroicons/react/solid";
+import { TiArrowSortedDown } from "react-icons/ti";
 import Sidebar from "./DropdownMenue";
 import { CSSTransition } from "react-transition-group";
 import { sideBarList } from "../data/Navlist";
@@ -10,7 +10,7 @@ const Navbar = () => {
     setToggleSidebar(!toggleSidebar);
   };
   return (
-    <div className=" mt-6">
+    <div className="mt-6 text-lg font-bold text-gray-700">
       <nav className="hidden sm:inline">
         <ul className="sm:flex flex-row justify-evenly ">
           <li className="hover:underline">
@@ -18,7 +18,7 @@ const Navbar = () => {
           </li>
           <li onMouseEnter={() => sideBar()} onMouseLeave={() => sideBar()}>
             <NavLink to="/research">Research</NavLink>
-            <ChevronDoubleDownIcon className="h-5 w-5 inline" />
+            <TiArrowSortedDown className="inline" />
             <div className="absolute left-1/4 w-52 z-10">
               <CSSTransition
                 in={toggleSidebar}

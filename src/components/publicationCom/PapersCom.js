@@ -23,33 +23,33 @@ export const PapersCom = () => {
   const newOrderedDate = orderData(paperData);
 
   return (
-    <div>
+    <div className="w-10/12">
       {/* loop through the new object data ; item represent the different year */}
       {Object.keys(newOrderedDate)
         .sort((a, b) => b - a)
         .map((item, index) => {
           return (
-            <>
+            <div>
               <div key={index}>
-                <div className=" pl-1 w-full h-6 bg-gray-200 text-gray-600 rounded-sm">
-                  {item}
-                </div>
+                <div className=" border-gray-300 border-b-2 pt-2">{item}</div>
               </div>
               {newOrderedDate[item].map((paper) => {
                 return (
-                  <>
-                    <PaperCom
-                      key={paper.id}
-                      title={paper.title}
-                      author={paper.author}
-                      year={paper.year}
-                      magazine={paper.magazine}
-                      url={paper.url}
-                    />
-                  </>
+                  <div className="m-6">
+                    <ul className="list-disc list-inside">
+                      <PaperCom
+                        key={paper.id}
+                        title={paper.title}
+                        author={paper.author}
+                        year={paper.year}
+                        magazine={paper.magazine}
+                        url={paper.url}
+                      />
+                    </ul>
+                  </div>
                 );
               })}
-            </>
+            </div>
           );
         })}
     </div>

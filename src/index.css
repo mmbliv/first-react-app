@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 * {
   transition: all 2s linear;
   -webkit-transition: all 0.2s linear;
@@ -9,6 +10,7 @@
   overflow: auto;
 }
 body {
+  font-family: "Open Sans", sans-serif;
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 

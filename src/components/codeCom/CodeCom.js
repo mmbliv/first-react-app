@@ -4,10 +4,10 @@ import { FaRegFile } from "react-icons/fa";
 
 export const CodeCom = (props) => {
   return (
-    <article>
-      <h1 className="font-bold pt-3">{props.title}</h1>
-      <p className="py-2">{props.info}</p>
-      <ul>
+    <li className=" pt-5">
+      <h1 className="font-bold text-lg uppercase">{props.title}</h1>
+      <p className=" py-1">{props.info}</p>
+      <ul className="pb-2">
         <li className=" text-gray-600 hover:underline hover:text-gray-400">
           {props.github_url && (
             <a href={props.github_url} className="flex items-center">
@@ -26,6 +26,6 @@ export const CodeCom = (props) => {
         </li>
       </ul>
       <hr />
-    </article>
+    </li>
   );
 };

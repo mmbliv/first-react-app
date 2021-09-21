@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "./DropdownMenue";
 import { Link } from "react-router-dom";
 
-import { ChevronDoubleDownIcon } from "@heroicons/react/solid";
+import { TiArrowSortedDown } from "react-icons/ti";
 import { sideBarList } from "../data/Navlist";
 import { CSSTransition } from "react-transition-group";
 
@@ -23,7 +23,7 @@ const Navbarsm = () => {
             className="w-40 flex justify-between px-1"
           >
             <Link to="/research">Research</Link>
-            <ChevronDoubleDownIcon className="h-5 w-5 inline" />
+            <TiArrowSortedDown className="inline" />
           </li>
           <li className="px-0">
             <CSSTransition

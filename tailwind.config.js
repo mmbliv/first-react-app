@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        openSan: ['"Open Sans"', "sans-serif"],
+      },
       minWidth: {
         0: "0",
         "1/4": "25%",
