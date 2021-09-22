@@ -11,8 +11,8 @@ const Home = () => {
         <HomeShowSlides />
       </div>
 
-      <div className="flex mt-6">
-        <div className="w-7/12 pr-8">
+      <div className="flex flex-col sm:flex-row mt-6">
+        <div className="sm:w-7/12 sm:pr-8">
           <h1 className="py-3 text-2xl text-Stroke uppercase">
             self introduce
           </h1>
@@ -32,7 +32,7 @@ const Home = () => {
           </ul>
         </div>
 
-        <div className="w-5/12 ml-5">
+        <div className="mt-24 sm:w-5/12 sm:ml-5 sm:mt-8">
           <div className=" p-2 relative shadow-inner border-Secondary bg-Secondary bg-opacity-20 border-transparent">
             <h1 className="py-3 text-2xl text-Stroke text-center">
               LATEST NEWS

@@ -9,7 +9,7 @@ export const Code = () => {
       <h1 className="font-bold text-4xl text-Stroke pb-6">
         <Text tid="navcodes" />
       </h1>
-      <div className="grid grid-cols-2 gap-7 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 ">
         {codeData.map((item) => {
           return (
             <ul className="p-6 border-gray-50 border-2 bg-Secondary bg-opacity-20 shadow-inner ">
