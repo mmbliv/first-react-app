@@ -1,8 +1,9 @@
 import React from "react";
 import HomeShowSlides from "../homeCom/HomeShowSlides";
-import { NewsCom } from "../newsCom/NewsCom";
-import newsData from "../../data/news-data";
-import { Link } from "react-router-dom";
+
+import { homepagePaperData } from "../../data/paper-data";
+import { PaperCom } from "../publicationCom/PaperCom";
+import Contact from "../Contact";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <div className="mt-6">
         <HomeShowSlides />
       </div>
+
       <div className="flex mt-6">
         <div className="w-7/12">
           <h1 className="py-3 text-lg text-Stroke uppercase">self introduce</h1>
@@ -24,24 +26,28 @@ const Home = () => {
             materials (e.g. graphene and MoS2) and applied them to study the
             structural, mechanical, and thermal properties of 2D materials.
           </p>
+          <ul className=" absolute flex text-3xl py-3 gap-3 text-Secondary border-gray-400 border-b">
+            <Contact />
+          </ul>
         </div>
-        <div className="w-5/12 ml-5">
-          <div className="w-full relative">
-            <h1 className="py-3 text-lg text-Stroke">LATEST NEWS</h1>
-            <NewsCom
-              key={newsData[newsData.length - 1].id}
-              title={newsData[newsData.length - 1].title}
-              date={newsData[newsData.length - 1].date}
-              content={newsData[newsData.length - 1].content.slice(0, 400)}
-              img={newsData[newsData.length - 1].img}
-            />
 
-            <Link
-              to="/news"
-              className=" text-Button hover:underline absolute right-0"
-            >
-              more info
-            </Link>
+        <div className="w-5/12 ml-5">
+          <div className=" p-2 relative shadow-inner border-Secondary bg-Secondary bg-opacity-20 border-transparent">
+            <h1 className="py-3 text-lg text-Stroke text-center">
+              LATEST NEWS
+            </h1>
+            {homepagePaperData.map((paper) => (
+              <ul className="text-center min-w-full">
+                <PaperCom
+                  key={paper.id}
+                  title={paper.title}
+                  author={paper.author}
+                  year={paper.year}
+                  magazine={paper.magazine}
+                  url={paper.url}
+                />
+              </ul>
+            ))}
           </div>
           <hr />
         </div>

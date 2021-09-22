@@ -1,26 +1,24 @@
 import React from "react";
 import { HashLink, NavHashLink } from "react-router-hash-link";
-import { sideBarList } from "../data/Navlist";
+import { navResearchData } from "../data/research-data";
 
 const Sidebar = (props) => {
   return (
     <div>
-      <ul className="flex flex-col flex-wrap bg-Secondary text-Main p-4 rounded-md">
-        <h1 className="text-Stroke">{props.ResearchTag}</h1>
-        {sideBarList.map((item, index) => {
+      <ol className=" list-inside list-decimal flex flex-col flex-wrap bg-Secondary text-Main p-4">
+        <h1 className="text-Stroke text-lg">{props.ResearchTag}</h1>
+        {navResearchData.map((item, index) => {
           return (
             <>
-              <ul>
-                <li className=" p-2 hover:underline hover:text-gray-600">
-                  <HashLink smooth to={`/research#${item}`}>
-                    {item}
-                  </HashLink>
-                </li>
-              </ul>
+              <li className="hover:underline pt-2 text-left">
+                <HashLink smooth to={`/research#${item}`}>
+                  {item}
+                </HashLink>
+              </li>
             </>
           );
         })}
-      </ul>
+      </ol>
     </div>
   );
 };

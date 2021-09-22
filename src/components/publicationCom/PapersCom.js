@@ -1,12 +1,11 @@
 import React from "react";
 import { PaperCom } from "./PaperCom";
 import { paperData } from "../../data/paper-data";
-import { findByAltText } from "@testing-library/react";
 
 export const PapersCom = () => {
   // convert the old array data to an new object data with keys of different year
 
-  const orderData = (paperData) => {
+  const orderData = () => {
     let orderedData = {};
     for (let i = 0; i < paperData.length; i++) {
       if (orderedData[paperData[i].year] === undefined) {
@@ -29,25 +28,23 @@ export const PapersCom = () => {
         .sort((a, b) => b - a)
         .map((item, index) => {
           return (
-            <div>
+            <div className="mt-4">
               <div key={index}>
-                <div className="pt-2">{item}</div>
+                <div>{item}</div>
               </div>
               <hr />
               {newOrderedDate[item].map((paper) => {
                 return (
-                  <div className="m-6">
-                    <ul className="list-disc list-inside">
-                      <PaperCom
-                        key={paper.id}
-                        title={paper.title}
-                        author={paper.author}
-                        year={paper.year}
-                        magazine={paper.magazine}
-                        url={paper.url}
-                      />
-                    </ul>
-                  </div>
+                  <ul className="list-disc list-inside">
+                    <PaperCom
+                      key={paper.id}
+                      title={paper.title}
+                      author={paper.author}
+                      year={paper.year}
+                      magazine={paper.magazine}
+                      url={paper.url}
+                    />
+                  </ul>
                 );
               })}
             </div>

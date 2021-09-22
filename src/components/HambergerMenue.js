@@ -3,7 +3,7 @@ import Sidebar from "./DropdownMenue";
 import { Link } from "react-router-dom";
 
 import { TiArrowSortedDown } from "react-icons/ti";
-import { sideBarList } from "../data/Navlist";
+
 import { CSSTransition } from "react-transition-group";
 
 const Navbarsm = () => {
@@ -13,8 +13,8 @@ const Navbarsm = () => {
   };
   return (
     <>
-      <nav className="nav absolute bg-gray-600 right-0 border-2 w-44 text-white z-10 sm:hidden ">
-        <ul>
+      <nav className="nav absolute bg-Secondary right-0 border-2 w-44 text-Main z-10 sm:hidden ">
+        <ul className="relative">
           <li className="px-1">
             <Link to="/">Home</Link>
           </li>
@@ -25,15 +25,15 @@ const Navbarsm = () => {
             <Link to="/research">Research</Link>
             <TiArrowSortedDown className="inline" />
           </li>
-          <li className="px-0">
+          <li className="absolute right-44 w-56">
             <CSSTransition
               in={toggleSidebar}
-              timeout={100}
+              timeout={500}
               unmountOnExit={true}
               className="nav"
             >
               <div>
-                <Sidebar sideBarList={sideBarList} />
+                <Sidebar />
               </div>
             </CSSTransition>
           </li>
