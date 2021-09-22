@@ -1,11 +1,14 @@
 import React from "react";
 import { CodeCom } from "./CodeCom";
 import { codeData } from "../../data/code-data";
+import { Text } from "../../constainers/Languages";
 
 export const Code = () => {
   return (
     <>
-      <h1 className="font-bold text-4xl text-Stroke pb-6">CODES</h1>
+      <h1 className="font-bold text-4xl text-Stroke pb-6">
+        <Text tid="navcodes" />
+      </h1>
       <div className="grid grid-cols-2 gap-7 ">
         {codeData.map((item) => {
           return (
