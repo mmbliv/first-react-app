@@ -7,6 +7,8 @@ import Header from "./components/Header";
 
 import Publication from "./components/pages/Publication";
 import Research from "./components/pages/ResearchPage";
+import NewsPage from "./components/pages/News";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,10 +25,14 @@ function App() {
         <Route exact path="/publication">
           <Publication />
         </Route>
+        <Route exact path="/news">
+          <NewsPage />
+        </Route>
         <Route exact path="/research">
           <Research />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

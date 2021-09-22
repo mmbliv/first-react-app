@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MenuIcon } from "@heroicons/react/solid";
 import Navbarsm from "./HambergerMenue";
 import { CSSTransition } from "react-transition-group";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -10,8 +11,10 @@ const Header = () => {
   };
   return (
     <div className="fixed right-0 left-0 top-0 z-40">
-      <div className="text-white bg-Headline h-10 flex flex-row justify-around items-center ">
-        <h4>MINGJIAN WEN</h4>
+      <div className="text-white bg-Headline h-14 flex flex-row justify-around items-center ">
+        <Link to="/" className="text-2xl">
+          MINGJIAN WEN
+        </Link>
         <h4 className="underline transform hover:scale-125">
           <a href="mailto:mmbliv@gmail.com">Email Me</a>
         </h4>

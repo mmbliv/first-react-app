@@ -7,10 +7,10 @@ import Research from "./Research";
 export const ResearchCom = () => {
   return (
     <div>
-      <div className=" hidden sm:inline sm:fixed sm:w-1/5 sm:pt-32">
+      <ol className=" bg-Secondary bg-opacity-20 text-Headline p-4 shadow-inner hidden sm:inline sm:fixed sm:w-1/5 sm:mt-12">
         <Sidebar ResearchTag={"RESEARCH"} />
-      </div>
-      <div className=" mt-5 sm:relative sm:left-1/4 sm:w-9/12">
+      </ol>
+      <div className="mt-5 sm:relative sm:left-1/4 sm:w-9/12">
         <Research />
       </div>
     </div>

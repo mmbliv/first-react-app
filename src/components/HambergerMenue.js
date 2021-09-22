@@ -13,19 +13,19 @@ const Navbarsm = () => {
   };
   return (
     <>
-      <nav className="nav absolute bg-Secondary right-0 border-2 w-44 text-Main z-10 sm:hidden ">
+      <nav className="nav absolute bg-Secondary right-0 border-2 w-44 text-Headline z-10 sm:hidden ">
         <ul className="relative">
-          <li className="px-1">
+          <li className="px-1 hover:underline">
             <Link to="/">Home</Link>
           </li>
           <li
             onMouseOver={() => sideBar()}
-            className="w-40 flex justify-between px-1"
+            className="w-40 flex justify-between px-1 hover:underline"
           >
             <Link to="/research">Research</Link>
             <TiArrowSortedDown className="inline" />
           </li>
-          <li className="absolute right-44 w-56">
+          <li className="absolute right-44 w-56 bg-Secondary text-Headline px-2">
             <CSSTransition
               in={toggleSidebar}
               timeout={500}
@@ -38,13 +38,13 @@ const Navbarsm = () => {
             </CSSTransition>
           </li>
 
-          <li className="px-1">
+          <li className="px-1 hover:underline">
             <Link to="/publication">Publication</Link>
           </li>
-          <li className="px-1">
+          <li className="px-1 hover:underline">
             <Link to="/codes">Codes</Link>
           </li>
-          <li className="px-1">
+          <li className="px-1 hover:underline">
             <Link to="/news">News</Link>
           </li>
         </ul>

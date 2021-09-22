@@ -5,9 +5,11 @@ import { FaRegFile } from "react-icons/fa";
 export const CodeCom = (props) => {
   return (
     <li>
-      <h1 className="font-bold text-lg uppercase text-Stroke">{props.title}</h1>
-      <hr />
-      <div className="mt-6 ml-6">
+      <h1 className="font-bold text-lg uppercase text-Stroke pb-2">
+        {props.title}
+      </h1>
+
+      <div>
         <p>{props.info}</p>
         <ul>
           <li className=" text-gray-600 hover:underline hover:text-gray-400">
