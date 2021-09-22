@@ -10,7 +10,7 @@ const Navbar = () => {
     setToggleSidebar(!toggleSidebar);
   };
   return (
-    <div className=" mt-12 text-lg font-bold text-gray-700">
+    <div className=" mt-20 text-2xl font-bold text-Headline">
       <nav className="hidden sm:inline">
         <ul className="sm:flex flex-row justify-evenly ">
           <li className=" border-b border-transparent hover:border-Stroke">
@@ -19,7 +19,7 @@ const Navbar = () => {
           <li onMouseEnter={() => sideBar()} onMouseLeave={() => sideBar()}>
             <NavLink to="/research">Research</NavLink>
             <TiArrowSortedDown className="inline" />
-            <div className="absolute left-1/4 w-1/4 z-10 text-sm">
+            <div className="absolute left-1/4 w-1/4 z-10 text-sm bg-Secondary pl-2 rounded-sm">
               <CSSTransition
                 in={toggleSidebar}
                 timeout={100}
@@ -46,6 +46,14 @@ const Navbar = () => {
               className="border-b border-transparent hover:border-Stroke"
             >
               Codes
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/news"
+              className="border-b border-transparent hover:border-Stroke"
+            >
+              News
             </NavLink>
           </li>
         </ul>
