@@ -27,6 +27,9 @@ module.exports = {
         "3/4": "75%",
         full: "100%",
       },
+      minHeight: {
+        14: "14rem",
+      },
     },
   },
   variants: {

@@ -21,7 +21,11 @@ export const NewsCom = (props) => {
         {/* if text is long than 600 then there is a read more button, and there will only show 600 long words'by slice string method'.
          */}
         {isReadMore ? (
-          <p className="whitespace-pre-line py-3">
+          <p
+            className={` "whitespace-pre-line py-3" ${
+              props.img !== "" && "sm:min-h-14"
+            } `}
+          >
             {props.img !== "" && (
               <img
                 src={props.img}
@@ -40,7 +44,11 @@ export const NewsCom = (props) => {
             )}
           </p>
         ) : (
-          <p className="whitespace-pre-line py-3">
+          <p
+            className={` "whitespace-pre-line py-3" ${
+              props.img !== "" && "sm:min-h-14"
+            } `}
+          >
             {props.img !== "" && (
               <img
                 src={props.img}

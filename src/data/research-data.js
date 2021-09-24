@@ -1,12 +1,5 @@
 // the shortTitle is shown at the research nav bar, also it is used to scoll between the research component
 
-const NeuralNetwork =
-  "Graph Neural Network Model for Bond Dissociation Energy (BDE) Prediction";
-const UncertaintyQuantification =
-  "Uncertainty Quantification in Molecular simulation";
-const MachineLearning = "Machine Learning Potential for Multilayer Graphene";
-const PotentialforGraphene =
-  "Physics-based Registry-dependent Interlayer Potential for Graphene";
 // when add new data of research pay attention to which shorttitle it belongs to, if there is no shorttitle you need, add a new one
 // and do not forget to update the navResearchData which at the bottom.
 export const researchData = [

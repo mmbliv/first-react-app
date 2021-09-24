@@ -7,7 +7,7 @@ export const paperData = [
     author: ["M", "H", "D", "G", "X"],
     magazine: "Madipisicinipsum dolor sit am",
     year: 2013,
-    url: "",
+    url: "#",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const paperData = [
     author: ["M", "S", "S", "E K", "E"],
     magazine: "adipisicinipsum dolor",
     year: 2018,
-    url: "",
+    url: "#",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const paperData = [
     author: ["M", "T"],
     magazine: "Phyadipisicinipsum dolor sit am9",
     year: 2019,
-    url: "",
+    url: "#",
   },
 ];
 
