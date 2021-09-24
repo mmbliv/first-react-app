@@ -14,7 +14,7 @@ const Header = () => {
     <div className="fixed right-0 left-0 top-0 z-40">
       <div className=" bg-Headline h-14 flex flex-row justify-around items-center ">
         <Link to="/" className="text-3xl text-ButtonText">
-          EINSTEIN
+          JOE
         </Link>
         <LanguageSelector />
 
