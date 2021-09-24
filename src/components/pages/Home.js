@@ -4,6 +4,7 @@ import { NewsCom } from "../newsCom/NewsCom";
 import newsData from "../../data/news-data";
 import Contact from "../Contact";
 import { Link } from "react-router-dom";
+import { Text } from "../../constainers/Languages";
 const Home = () => {
   return (
     <div className="w-10/12 my-0 mx-auto">
@@ -14,18 +15,10 @@ const Home = () => {
       <div className="flex flex-col sm:flex-row mt-6">
         <div className="sm:w-7/12 sm:pr-8">
           <h1 className="py-3 text-2xl text-Stroke uppercase">
-            self introduce
+            <Text tid="selfintroduce" />
           </h1>
           <p>
-            I am currently a postdoc scholar at LBNL working with Prof. Kristin
-            Persson to study battery electrolytes using machine learning
-            techniques. <br />
-            <br />I obtained my Ph.D. in Solid Mechanics from the Department of
-            Aerospace Engineering and Mechanics at the University of Minnesota.
-            Supervised by Prof. Ellad Tadmor, I worked on developing both
-            physics-based and machine learning interatomic potentials for 2D
-            materials (e.g. graphene and MoS2) and applied them to study the
-            structural, mechanical, and thermal properties of 2D materials.
+            <Text tid="selfintroducecontent" />
           </p>
           <ul className=" absolute flex text-3xl py-3 gap-3 text-Headline border-gray-400 border-b">
             <Contact />

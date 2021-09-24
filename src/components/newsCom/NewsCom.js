@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Text } from "../../constainers/Languages";
 
 export const NewsCom = (props) => {
   const isTextLong = props.content.length > 600;
@@ -8,8 +9,13 @@ export const NewsCom = (props) => {
   console.log(isReadMore);
   return (
     <div>
-      <h1 className=" text-Hightlight text-lg">{props.title}</h1>
-      <time className="text-Stroke text-sm">{props.date}</time>
+      <h1 className=" text-Hightlight text-lg">
+        {" "}
+        <Text tid={props.title} />
+      </h1>
+      <time className="text-Stroke text-sm">
+        <Text tid={props.date} />
+      </time>
 
       <div>
         {/* if text is long than 600 then there is a read more button, and there will only show 600 long words'by slice string method'.
@@ -20,10 +26,10 @@ export const NewsCom = (props) => {
               <img
                 src={props.img}
                 alt={""}
-                className="w-2/5 h-52 float-left rounded-sm object-cover sm:object-contain"
+                className=" sm:pr-3 sm:w-4/12 sm:h-52 sm:object-cover sm:float-left rounded-sm"
               />
             )}
-            {props.content}
+            {<Text tid={props.content} />}
             {isTextLong && (
               <button
                 className=" text-Button inline-block pl-4"
@@ -39,10 +45,10 @@ export const NewsCom = (props) => {
               <img
                 src={props.img}
                 alt={""}
-                className=" w-2/5 h-52 float-left rounded-sm object-cover sm:object-contain"
+                className="sm:pr-3 sm:w-4/12 sm:h-52 sm:object-cover sm:float-left rounded-sm"
               />
             )}
-            {props.content.slice(0, 600)}
+            {<Text tid={props.content.slice(0, 600)} />}
 
             {isTextLong && <span>...</span>}
             {isTextLong && (
@@ -56,6 +62,7 @@ export const NewsCom = (props) => {
           </p>
         )}
       </div>
+      <hr />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaRegFile } from "react-icons/fa";
-
+import { Text } from "../../constainers/Languages";
 export const CodeCom = (props) => {
   return (
     <li>
@@ -10,7 +10,9 @@ export const CodeCom = (props) => {
       </h1>
 
       <div>
-        <p>{props.info}</p>
+        <p>
+          <Text tid={props.info} />
+        </p>
         <ul>
           <li className=" text-gray-600 hover:underline hover:text-gray-400">
             {props.github_url && (

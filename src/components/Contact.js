@@ -8,24 +8,24 @@ const Contact = () => {
   return (
     <>
       <li className="transform hover:scale-125 hover:text-Hightlight">
-        <a href="https://scholar.google.com/citations?user=RXLH5k4AAAAJ&hl=en">
+        <div>
           <SiGooglescholar />
-        </a>
+        </div>
       </li>
       <li className="transform hover:scale-125 hover:text-Hightlight">
-        <a href="https://github.com/mjwen">
+        <div>
           <FaGithubSquare />
-        </a>
+        </div>
       </li>
       <li className="transform hover:scale-125 hover:text-Hightlight">
-        <a href="https://www.researchgate.net/profile/Mingjian-Wen">
+        <div>
           <FaResearchgate />
-        </a>
+        </div>
       </li>
       <li className="transform hover:scale-125 hover:text-Hightlight">
-        <a href="https://twitter.com/wen_mingjian">
+        <div>
           <FaTwitterSquare />
-        </a>
+        </div>
       </li>
     </>
   );

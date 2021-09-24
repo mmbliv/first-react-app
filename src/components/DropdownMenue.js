@@ -1,6 +1,7 @@
 import React from "react";
-import { HashLink, NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { navResearchData } from "../data/research-data";
+import { Text } from "../constainers/Languages";
 
 const Sidebar = (props) => {
   return (
@@ -11,7 +12,7 @@ const Sidebar = (props) => {
           <>
             <li className="hover:underline p-1 text-left">
               <HashLink smooth to={`/research#${item}`}>
-                {item}
+                <Text tid={item} />
               </HashLink>
             </li>
           </>

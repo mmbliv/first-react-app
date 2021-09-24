@@ -11,7 +11,7 @@ const LanguageSelector = () => {
     <select
       onChange={handleLanguageChange}
       value={userLanguage}
-      className=" rounded-sm"
+      className="rounded-sm"
     >
       {Object.entries(languageOptions).map(([id, name]) => (
         <option key={id} value={id}>

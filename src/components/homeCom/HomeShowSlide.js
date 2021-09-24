@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Text } from "../../constainers/Languages";
 
 const HomeShowSlide = ({ item, total, nextSlide, prevSlide }) => {
   return (
@@ -9,10 +10,12 @@ const HomeShowSlide = ({ item, total, nextSlide, prevSlide }) => {
         className=" w-full h-96 object-cover ms:object-contain"
       />
 
-      <div className="absolute rounded-sm bg-opacity-75 p-2 left-1 top-16 bg-blue-300">
-        <p>{item.intro}</p>
+      <div className="absolute w-6/12 rounded-sm bg-opacity-75 p-2 left-1 top-16 bg-blue-300">
+        <p>
+          <Text tid={item.intro} />
+        </p>
       </div>
-      <div className="absolute text-white top-2 left-2 p-1">
+      <div className="absolute text-Stroke top-2 left-2 p-1">
         {item.id + "/" + total}
       </div>
     </div>

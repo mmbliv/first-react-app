@@ -22,7 +22,7 @@ export const PapersCom = () => {
   const newOrderedDate = orderData(paperData);
 
   return (
-    <div className="w-10/12">
+    <div className="sm:w-10/12">
       {/* loop through the new object data ; item represent the different year */}
       {Object.keys(newOrderedDate)
         .sort((a, b) => b - a)

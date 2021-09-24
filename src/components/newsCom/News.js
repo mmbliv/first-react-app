@@ -21,7 +21,6 @@ export const News = () => {
                 img={item.img}
               />
             </div>
-            <hr />
           </>
         );
       })}

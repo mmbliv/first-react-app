@@ -6,15 +6,14 @@ const Footer = () => {
       <address>
         Email:
         <br />
-        <a href="mailto:webmaster@example.com">acondye@gmail.com</a>
-        <br />
+        <div>gmail.com</div>
         Address:
         <br />
-        Lawrence Berkeley National Laboratory
+        bbbbbbbbbbbbbbbbbbb
         <br />
-        1 Cyclotron Road Mailstop 033-0142F
+        aaaaaaaaaa
         <br />
-        Berkeley, CA 94720
+        ccccccc
       </address>
     </div>
   );

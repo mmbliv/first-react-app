@@ -4,17 +4,14 @@ import { SiGooglescholar } from "react-icons/si";
 import { Text } from "../../constainers/Languages";
 const Publication = () => {
   return (
-    <div className="w-10/12 my-8 mx-auto">
+    <div className=" w-10/12 sm:w-10/12 my-8 mx-auto">
       <h1 className="flex font-bold text-4xl pb-2">
         <p className="pr-6 text-Stroke">
           <Text tid="navpublication" />
         </p>
-        <a
-          className=" text-Button transform hover:scale-110"
-          href="https://scholar.google.com/citations?user=RXLH5k4AAAAJ&hl=en"
-        >
+        <div className=" text-Button transform hover:scale-110">
           <SiGooglescholar />
-        </a>
+        </div>
       </h1>
       <PapersCom />
     </div>
