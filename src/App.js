@@ -16,8 +16,14 @@ function App() {
       <BrowserRouter>
         <Header />
         <Navbar />
+<<<<<<< HEAD
         <BrowserRouter.Switch>
           <BrowserRouter.Route exact path="/">
+=======
+        <Home />
+        <Switch>
+          <Route exact path="/">
+>>>>>>> 976e645b290fa097fa9e4d8417b5b6cad8dc59a0
             <Home />
           </BrowserRouter.Route>
           <BrowserRouter.Route exact path="/codes">
