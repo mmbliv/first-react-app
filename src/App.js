@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Codes from "./components/pages/Codes";
 import Header from "./components/Header";
@@ -13,34 +13,28 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <Router>
         <Header />
         <Navbar />
-<<<<<<< HEAD
-        <BrowserRouter.Switch>
-          <BrowserRouter.Route exact path="/">
-=======
-        <Home />
         <Switch>
           <Route exact path="/">
->>>>>>> 976e645b290fa097fa9e4d8417b5b6cad8dc59a0
             <Home />
-          </BrowserRouter.Route>
-          <BrowserRouter.Route exact path="/codes">
+          </Route>
+          <Route exact path="/codes">
             <Codes />
-          </BrowserRouter.Route>
-          <BrowserRouter.Route exact path="/publication">
+          </Route>
+          <Route exact path="/publication">
             <Publication />
-          </BrowserRouter.Route>
-          <BrowserRouter.Route exact path="/news">
+          </Route>
+          <Route exact path="/news">
             <NewsPage />
-          </BrowserRouter.Route>
-          <BrowserRouter.Route exact path="/research">
+          </Route>
+          <Route exact path="/research">
             <Research />
-          </BrowserRouter.Route>
-        </BrowserRouter.Switch>
+          </Route>
+        </Switch>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </LanguageProvider>
   );
 }
