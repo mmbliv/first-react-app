@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Codes from "./components/pages/Codes";
 import Header from "./components/Header";
@@ -13,28 +13,28 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <LanguageProvider>
-      <Router>
+      <BrowserRouter>
         <Header />
         <Navbar />
-        <Switch>
-          <Route exact path="/">
+        <BrowserRouter.Switch>
+          <BrowserRouter.Route exact path="/">
             <Home />
-          </Route>
-          <Route exact path="/codes">
+          </BrowserRouter.Route>
+          <BrowserRouter.Route exact path="/codes">
             <Codes />
-          </Route>
-          <Route exact path="/publication">
+          </BrowserRouter.Route>
+          <BrowserRouter.Route exact path="/publication">
             <Publication />
-          </Route>
-          <Route exact path="/news">
+          </BrowserRouter.Route>
+          <BrowserRouter.Route exact path="/news">
             <NewsPage />
-          </Route>
-          <Route exact path="/research">
+          </BrowserRouter.Route>
+          <BrowserRouter.Route exact path="/research">
             <Research />
-          </Route>
-        </Switch>
+          </BrowserRouter.Route>
+        </BrowserRouter.Switch>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </LanguageProvider>
   );
 }

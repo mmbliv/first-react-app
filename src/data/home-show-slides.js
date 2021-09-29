@@ -1,22 +1,22 @@
 const homeShowSlides = [
   {
     id: 1,
-    img: "img/img-1.jpeg",
+    img: "img/Imgone.jpeg",
     intro: "slidetext1",
   },
   {
     id: 2,
-    img: "img/img-2.jpeg",
+    img: "img/Imgtwo.jpeg",
     intro: "slidetext2",
   },
   {
     id: 3,
-    img: "img/img-3.jpeg",
+    img: "img/Imgthree.jpeg",
     intro: "slidetext3",
   },
   {
     id: 4,
-    img: "img/img-4.png",
+    img: "img/Imgfour.png",
     intro: "slidetext4",
   },
 ];
