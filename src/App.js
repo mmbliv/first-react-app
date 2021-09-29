@@ -16,6 +16,7 @@ function App() {
       <Router>
         <Header />
         <Navbar />
+        <Home />
         <Switch>
           <Route exact path="/">
             <Home />
