@@ -1,7 +1,7 @@
 const newsData = [
   {
     id: 1,
-    img: "img/img-1.jpeg",
+    img: "img/Imgone.jpeg",
     title: "newstitle1",
     date: "newsdate1",
     content: "newscontent1",

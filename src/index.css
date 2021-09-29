@@ -8,6 +8,7 @@
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   max-width: 1536px;
+  position: relative;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -15,6 +16,7 @@ body {
   color: #5f6c7b;
   text-align: justify;
   font-size: 1rem;
+  position: static;
 }
 
 .slide-next.enter {
