@@ -24,7 +24,7 @@ const Navbar = () => {
               <Text tid="navresearch" />
             </NavLink>
             <TiArrowSortedDown className="inline" />
-            <div className="absolute left-1/4 w-1/4 z-10 text-sm bg-Secondary pl-2 rounded-sm">
+            <div className="absolute left-1/4 w-56 z-10 text-sm bg-Secondary pl-2 rounded-sm">
               <CSSTransition
                 in={toggleSidebar}
                 timeout={100}

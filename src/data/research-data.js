@@ -8,28 +8,28 @@ export const researchData = [
     shortTitle: "researchshorttitle1-NeuralNetwork",
 
     title: "researchtitle1",
-    img: "img/img-2.jpeg",
+    img: "img/Imgone.jpeg",
     infor: "researchinfo1",
   },
   {
     id: 2,
     shortTitle: "researchshorttitle2-UncertaintyQuantification",
     title: "researchtitle2",
-    img: "img/img-1.jpeg",
+    img: "img/Imgone.jpeg",
     infor: "researchinfo2",
   },
   {
     id: 3,
     shortTitle: "researchshorttitle3-MachineLearningMachineLearning",
     title: "researchtitle3",
-    img: "img/img-3.jpeg",
+    img: "img/Imgtwo.jpeg",
     infor: "researchinfo3",
   },
   {
     id: 4,
     shortTitle: "researchshorttitle4-PotentialforGraphene",
     title: "researchtitle4",
-    img: "img/img-2.jpeg",
+    img: "img/Imgthree.jpeg",
     infor: "researchinfo4",
   },
 ];
